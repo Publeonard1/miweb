@@ -1,0 +1,5 @@
+# Podemos guardar el archivo que queremos no envie al repo
+inf.env
+
+# Tambien podemos ocultar carpetas que no se suban en el caso de que se tenga por ejemplo node
+node_modules/
