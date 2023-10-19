@@ -2,4 +2,4 @@
 inf.env
 
 # Tambien podemos ocultar carpetas que no se suban en el caso de que se tenga por ejemplo node
-node_modules/
+#node_modules/
