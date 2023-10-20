@@ -1,3 +1,6 @@
 Prueba git status -s
 
 Prueba de modificación para el comando git diff que nos muestra que tenemos de modificaciones en el arc.
+
+Para modificar y mostrar en otra rama * pr-0001
+
