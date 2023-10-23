@@ -1,45 +1,49 @@
-"""Welcome to Reflex! This file outlines the steps to create a basic app."""
-from rxconfig import config
-
 import reflex as rx
-
-docs_url = "https://reflex.dev/docs/getting-started/introduction"
-filename = f"{config.app_name}/{config.app_name}.py"
 
 
 class State(rx.State):
-    """The app state."""
-
     pass
 
 
+# La función es para crear la pág. inicial y nos tiene que devolver -> el componente rx y la es la parte gráfica
 def index() -> rx.Component:
-    return rx.fragment(
-        rx.color_mode_button(rx.color_mode_icon(), float="right"),
-        rx.vstack(
-            rx.heading("Welcome to Reflex!", font_size="2em"),
-            rx.box("Get started by editing ", rx.code(filename, font_size="1em")),
-            rx.link(
-                "Check out our docs!",
-                href=docs_url,
-                border="0.1em solid",
-                padding="0.5em",
-                border_radius="0.5em",
-                _hover={
-                    "color": rx.color_mode_cond(
-                        light="rgb(107,99,246)",
-                        dark="rgb(179, 175, 255)",
-                    )
-                },
-            ),
-            spacing="1.5em",
-            font_size="2em",
-            padding_top="10%",
-        ),
+    rx.text("Hola Leo", color="rbg(45, 48, 18, 0.5)", font_size="2rem")
+    return rx.button(  # Delver por pantalla el componente de botón
+        "Hola Leonardo",
+        border_radius="1em",
+        box_shadow="rgba(151, 65, 252, 0.8) 0 15px 30px -10px",
+        background_image="linear-gradient(144deg,#AF40FF,#5B42F3 50%,#00DDEB)",
+        box_sizing="border-box",
+        color="white",
+        opacity="0.6",
+        _hover={
+            "opacity": 10,
+        },
     )
 
 
-# Add state and page to the app.
-app = rx.App()
-app.add_page(index)
+rx.text("Hola Leo", color="rbg(45, 48, 18, 0.5)", font_size="2rem")
+
+# Con la variable que se llama app, ejecutamos lo que tenemos de código para que lo muestre en pantalla
+app = rx.App()  # de tipo rx.App
+app.add_page(
+    index
+)  # Vamos a agregar con las var app la función add_page --> la funicón pag  y que nos la compile
 app.compile()
+
+# Mi primer código de línea con sus estilos y esto es un componente
+# rx.text("Hola Leo", color="rbg(45, 48, 18, 0.5)", font_size="2")
+
+
+rx.button(
+    "Fancy Button",
+    border_radius="1em",
+    box_shadow="rgba(151, 65, 252, 0.8) 0 15px 30px -10px",
+    background_image="linear-gradient(144deg,#AF40FF,#5B42F3 50%,#00DDEB)",
+    box_sizing="border-box",
+    color="white",
+    opacity="0.6",
+    _hover={
+        "opacity": 3.5,
+    },
+)
