@@ -62,7 +62,7 @@ export default function Component() {
 )}
 </Fragment>
   <Button sx={{"borderRadius": "1em", "boxShadow": "rgba(151, 65, 252, 0.8) 0 15px 30px -10px", "backgroundImage": "linear-gradient(144deg,#AF40FF,#5B42F3 50%,#00DDEB)", "boxSizing": "border-box", "color": "white", "opacity": "0.6", "_hover": {"opacity": 10}}}>
-  {`Hola Leonardo`}
+  {`Hola, Nuevo còdigo`}
 </Button>
   <NextHead>
   <title>
