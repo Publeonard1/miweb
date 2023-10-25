@@ -1,4 +1,10 @@
 import reflex as rx
+from reflex_web_link_bio.components.navbar import navbar
+from reflex_web_link_bio.views.header.header import header
+
+# from reflex_web_link_bio.views.header.encabezado import
+
+# Quiero importa el componente narvar que hemos creado
 
 
 class State(rx.State):
@@ -8,14 +14,18 @@ class State(rx.State):
 # La función es para crear la pág. inicial y nos tiene que devolver -> el componente rx y la es la parte gráfica
 def index() -> rx.Component:
     # el .Hstack te ayuda a hacer componentes de forma horizontal
-    rx.Hstack(
-        # El componente es un hijo como texto
-        rx.text(
-            "Publeonard",
-            height="40px",
-        ),
-    )
+    return rx.vstack(navbar(), header())
 
+    # Ahora si yo quiero un grupo de narvar
+    # retunr rx.vstsck(
+    # vavbar()
+    # vavbar()
+    # vavbar()
+    # vavbar()
+    # ) Son un grupo de narbar pero de formar vertical
+
+
+# L apropiedad stikhy va a estar fijo
 
 # Con la variable que se llama app, ejecutamos lo que tenemos de código para que lo muestre en pantalla
 app = rx.App()  # de tipo rx.App
