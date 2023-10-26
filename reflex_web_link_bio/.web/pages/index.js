@@ -3,7 +3,7 @@ import { useRouter } from "next/router"
 import { Event, getAllLocalStorageItems, getRefValue, getRefValues, isTrue, preventDefault, refs, spreadArraysOrObjects, uploadFiles, useEventLoop } from "/utils/state"
 import { EventLoopContext, initialEvents, StateContext } from "/utils/context.js"
 import "focus-visible/dist/focus-visible"
-import { Avatar, Box, HStack, Modal, ModalBody, ModalContent, ModalHeader, ModalOverlay, Text, useColorMode, VStack } from "@chakra-ui/react"
+import { Avatar, Box, Button, HStack, Modal, ModalBody, ModalContent, ModalHeader, ModalOverlay, Text, useColorMode, VStack } from "@chakra-ui/react"
 import NextHead from "next/head"
 
 
@@ -76,6 +76,11 @@ export default function Component() {
   {` 👩🏻‍🔧Soy Ingeniero Mecánico y 👩🏻‍💻diseñador mecánico de detalle con experiencia en el sector y quiero automatizar los procesos mecánicos que tiene la industria
                  y el sector automotor con las nuevas tecnologías.  `}
 </Text>
+</VStack>
+  <VStack>
+  <Button sx={{"color": "white", "backgroundColor": "purple", "paddingX": "100px"}}>
+  {`Twitch`}
+</Button>
 </VStack>
 </VStack>
   <NextHead>
