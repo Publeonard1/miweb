@@ -3,7 +3,7 @@ import { useRouter } from "next/router"
 import { Event, getAllLocalStorageItems, getRefValue, getRefValues, isTrue, preventDefault, refs, spreadArraysOrObjects, uploadFiles, useEventLoop } from "/utils/state"
 import { EventLoopContext, initialEvents, StateContext } from "/utils/context.js"
 import "focus-visible/dist/focus-visible"
-import { Avatar, Box, Button, HStack, Link, Modal, ModalBody, ModalContent, ModalHeader, ModalOverlay, Text, useColorMode, VStack } from "@chakra-ui/react"
+import { Avatar, Box, Button, HStack, Image, Link, Modal, ModalBody, ModalContent, ModalHeader, ModalOverlay, Text, useColorMode, VStack } from "@chakra-ui/react"
 import NextLink from "next/link"
 import NextHead from "next/head"
 
@@ -99,6 +99,15 @@ export default function Component() {
   {`Discord`}
 </Button>
 </Link>
+</VStack>
+  <VStack>
+  <Image src={`favicon.ico`}/>
+  <Link as={NextLink} href={`https//github.com/Publeonar1`} isExternal={true}>
+  {`© 2021-2023. Desde la vinculación en la rama`}
+</Link>
+  <Text>
+  {`Pie de página del link_bio`}
+</Text>
 </VStack>
 </VStack>
   <NextHead>

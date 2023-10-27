@@ -2,6 +2,7 @@ import reflex as rx
 from reflex_web_link_bio.components.navbar import navbar
 from reflex_web_link_bio.views.header.header import header
 from reflex_web_link_bio.views.links.links import links
+from reflex_web_link_bio.components.footer import footer
 
 # from reflex_web_link_bio.views.header.encabezado import
 
@@ -15,11 +16,7 @@ class State(rx.State):
 # La función es para crear la pág. inicial y nos tiene que devolver -> el componente rx y la es la parte gráfica
 def index() -> rx.Component:
     # el .Hstack te ayuda a hacer componentes de forma horizontal
-    return rx.vstack(
-        navbar(),
-        header(),
-        links(),
-    )
+    return rx.vstack(navbar(), header(), links(), footer())
 
     # Ahora si yo quiero un grupo de narvar
     # retunr rx.vstsck(
