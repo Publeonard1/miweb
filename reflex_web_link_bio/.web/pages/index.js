@@ -3,7 +3,8 @@ import { useRouter } from "next/router"
 import { Event, getAllLocalStorageItems, getRefValue, getRefValues, isTrue, preventDefault, refs, spreadArraysOrObjects, uploadFiles, useEventLoop } from "/utils/state"
 import { EventLoopContext, initialEvents, StateContext } from "/utils/context.js"
 import "focus-visible/dist/focus-visible"
-import { Avatar, Box, Button, HStack, Modal, ModalBody, ModalContent, ModalHeader, ModalOverlay, Text, useColorMode, VStack } from "@chakra-ui/react"
+import { Avatar, Box, Button, HStack, Link, Modal, ModalBody, ModalContent, ModalHeader, ModalOverlay, Text, useColorMode, VStack } from "@chakra-ui/react"
+import NextLink from "next/link"
 import NextHead from "next/head"
 
 
@@ -78,9 +79,26 @@ export default function Component() {
 </Text>
 </VStack>
   <VStack>
-  <Button sx={{"color": "white", "backgroundColor": "purple", "paddingX": "100px"}}>
+  <Link as={NextLink} href={`https://twitch.tv/publeonardo1`} isExternal={true}>
+  <Button>
   {`Twitch`}
 </Button>
+</Link>
+  <Link as={NextLink} href={`https://github.com/Publeonard1`} isExternal={true}>
+  <Button>
+  {`Github`}
+</Button>
+</Link>
+  <Link as={NextLink} href={`https://youtube.com/leonardo1mc`} isExternal={true}>
+  <Button>
+  {`YouTube`}
+</Button>
+</Link>
+  <Link as={NextLink} href={`https://https://discord.com/channels/729672926432985098/1004479046207410366`} isExternal={true}>
+  <Button>
+  {`Discord`}
+</Button>
+</Link>
 </VStack>
 </VStack>
   <NextHead>
