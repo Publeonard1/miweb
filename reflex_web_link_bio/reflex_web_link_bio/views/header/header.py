@@ -15,4 +15,6 @@ def header() -> rx.Component:
     )
 
 
-# Y luego se importa en nuestra web pricipal
+# Y luego se importa en nuestra web principal
+# 3️⃣ Para hacer la barra de botones con links hacemos otra carpeta en views una llamada links y se crea el fichero
+# llamado links.py
