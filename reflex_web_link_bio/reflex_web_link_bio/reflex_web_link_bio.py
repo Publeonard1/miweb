@@ -52,4 +52,4 @@ app.compile()
 
 # Reflex funciona con componentes, Hoy vamos a crear la barra de nav.
 
-# Investigar que son los componenetes de Layout o diseño
+# Investigar que son los componenetes de Layout o diseño, gu
