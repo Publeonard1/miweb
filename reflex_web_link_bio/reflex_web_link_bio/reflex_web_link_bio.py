@@ -1,12 +1,14 @@
 import reflex as rx
+
+# Components
 from reflex_web_link_bio.components.navbar import navbar
 from reflex_web_link_bio.views.header.header import header
 from reflex_web_link_bio.views.links.links import links
 from reflex_web_link_bio.components.footer import footer
-from reflex_web_link_bio.components.styles import styles
 
 # Importación de styles
-
+import reflex_web_link_bio.styles.styles as styles
+from reflex_web_link_bio.styles.styles import Size as Size
 
 # from reflex_web_link_bio.views.header.encabezado import
 
@@ -31,7 +33,7 @@ def index() -> rx.Component:
                 max_width=styles.MAX_WIDTH,  # se reemplaza el stylo que se tiene y se viene con el estilo desde el fichero style
                 width="100%",  # Que me muestre el 100% paraque me muestre
                 margin_y=styles.Size.BIG.value,  # Un componente que dejamos como margen hacía afuera y el padding es lo que damos hacía dentro
-            )
+            ),
         ),
         footer(),
     )
