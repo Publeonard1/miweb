@@ -5,6 +5,7 @@ import { EventLoopContext, initialEvents, StateContext } from "/utils/context.js
 import "focus-visible/dist/focus-visible"
 import { Avatar, Box, Button, Center, HStack, Image, Link, Modal, ModalBody, ModalContent, ModalHeader, ModalOverlay, Text, useColorMode, VStack } from "@chakra-ui/react"
 import NextLink from "next/link"
+import { ArrowForwardIcon } from "@chakra-ui/icons"
 import NextHead from "next/head"
 
 
@@ -69,7 +70,7 @@ export default function Component() {
 </Text>
 </HStack>
   <Center>
-  <VStack sx={{"colorText": "Black", "maxWidth": "600px", "width": "100%", "marginY": "25px"}}>
+  <VStack sx={{"colorText": "Black", "maxWidth": "560px", "width": "100%", "marginY": "2em"}}>
   <VStack>
   <Avatar size={`sm`}/>
   <Text>
@@ -81,24 +82,64 @@ export default function Component() {
 </Text>
 </VStack>
   <VStack>
-  <Link as={NextLink} href={`https://twitch.tv/publeonardo1`} isExternal={true}>
-  <Button>
-  {`Twitch`}
+  <Link as={NextLink} href={`https://twitch.tv/publeonardo1`} isExternal={true} sx={{"width": "100%"}}>
+  <Button sx={{"width": "100%", "height": "100px", "display": "block", "padding": "0.5em", "borderRadius": "1em"}}>
+  <HStack>
+  <ArrowForwardIcon/>
+  <VStack>
+  <Text>
+  {`Twitch - Canal de Leonardo`}
+</Text>
+  <Text>
+  {`Twitch - Canal de Leonardo`}
+</Text>
+</VStack>
+</HStack>
 </Button>
 </Link>
-  <Link as={NextLink} href={`https://github.com/Publeonard1`} isExternal={true}>
-  <Button>
-  {`Github`}
+  <Link as={NextLink} href={`https://github.com/Publeonard1`} isExternal={true} sx={{"width": "100%"}}>
+  <Button sx={{"width": "100%", "height": "100px", "display": "block", "padding": "0.5em", "borderRadius": "1em"}}>
+  <HStack>
+  <ArrowForwardIcon/>
+  <VStack>
+  <Text>
+  {`Github - Repositorio`}
+</Text>
+  <Text>
+  {`Github - Repositorio`}
+</Text>
+</VStack>
+</HStack>
 </Button>
 </Link>
-  <Link as={NextLink} href={`https://youtube.com/leonardo1mc`} isExternal={true}>
-  <Button>
-  {`YouTube`}
+  <Link as={NextLink} href={`https://youtube.com/leonardo1mc`} isExternal={true} sx={{"width": "100%"}}>
+  <Button sx={{"width": "100%", "height": "100px", "display": "block", "padding": "0.5em", "borderRadius": "1em"}}>
+  <HStack>
+  <ArrowForwardIcon/>
+  <VStack>
+  <Text>
+  {`YouTube - Canal oficial de Leonardo`}
+</Text>
+  <Text>
+  {`YouTube - Canal oficial de Leonardo`}
+</Text>
+</VStack>
+</HStack>
 </Button>
 </Link>
-  <Link as={NextLink} href={`https://https://discord.com/channels/729672926432985098/1004479046207410366`} isExternal={true}>
-  <Button>
+  <Link as={NextLink} href={`https://https://discord.com/channels/729672926432985098/1004479046207410366`} isExternal={true} sx={{"width": "100%"}}>
+  <Button sx={{"width": "100%", "height": "100px", "display": "block", "padding": "0.5em", "borderRadius": "1em"}}>
+  <HStack>
+  <ArrowForwardIcon/>
+  <VStack>
+  <Text>
   {`Discord`}
+</Text>
+  <Text>
+  {`Discord`}
+</Text>
+</VStack>
+</HStack>
 </Button>
 </Link>
 </VStack>

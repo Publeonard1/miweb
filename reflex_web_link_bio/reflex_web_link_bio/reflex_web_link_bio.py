@@ -3,6 +3,10 @@ from reflex_web_link_bio.components.navbar import navbar
 from reflex_web_link_bio.views.header.header import header
 from reflex_web_link_bio.views.links.links import links
 from reflex_web_link_bio.components.footer import footer
+from reflex_web_link_bio.components.styles import styles
+
+# Importación de styles
+
 
 # from reflex_web_link_bio.views.header.encabezado import
 
@@ -24,9 +28,9 @@ def index() -> rx.Component:
                 header(),
                 links(),
                 color_text="Black",
-                max_width="600px",
+                max_width=styles.MAX_WIDTH,  # se reemplaza el stylo que se tiene y se viene con el estilo desde el fichero style
                 width="100%",  # Que me muestre el 100% paraque me muestre
-                margin_y="25px",  # Un componente que dejamos como margen hacía afuera y el padding es lo que damos hacía dentro
+                margin_y=styles.Size.BIG.value,  # Un componente que dejamos como margen hacía afuera y el padding es lo que damos hacía dentro
             )
         ),
         footer(),
@@ -44,7 +48,9 @@ def index() -> rx.Component:
 # L apropiedad stikhy va a estar fijo
 
 # Con la variable que se llama app, ejecutamos lo que tenemos de código para que lo muestre en pantalla
-app = rx.App()  # de tipo rx.App
+app = rx.App(
+    style=styles.BASE_STYLES  # Esto de golpe me estila todos los botones la app
+)  # de tipo rx.App
 app.add_page(
     index
 )  # Vamos a agregar con las var app la función add_page --> la funicón pag  y que nos la compile
