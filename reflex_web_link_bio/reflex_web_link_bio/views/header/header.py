@@ -7,11 +7,15 @@ def header() -> rx.Component:
         # Avatar desde reflex
         rx.avatar(size="sm"),
         # Tittle name
-        rx.text("¡Hola! 👋🏻. Soy Leonardo Moreno Cubides"),
+        rx.text(
+            "¡Hola! 👋🏻. Soy Leonardo Moreno Cubides", text_shadow="2px 2px 4px #1f1f1f"
+        ),
         rx.text(
             """ 👩🏻‍🔧Soy Ingeniero Mecánico y 👩🏻‍💻diseñador mecánico de detalle con experiencia en el sector y quiero automatizar los procesos mecánicos que tiene la industria
                  y el sector automotor con las nuevas tecnologías.  """
         ),
+        font_family="Gill Sans Extrabold",
+        text_align="justify",
     )
 
 

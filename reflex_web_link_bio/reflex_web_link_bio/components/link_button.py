@@ -1,5 +1,7 @@
 import reflex as rx
 
+# Importamos los estilos estipulados que se tienen
+import reflex_web_link_bio.styles.styles as styles  # Se puede llmara el styles como prop. para usar asqui en este compo
 
 # 4️⃣ Se crea este nuevo fichero dentro de la capr, components y quiero que este botón sea especial
 # Se crea como un componente normal, Antes me estaba retornando con return rx.button("Twich") Ahora lo quiero customizar
@@ -15,11 +17,11 @@ def link_button(text: str, url: str) -> rx.Component:
                 rx.icon(
                     tag="arrow_forward",
                 ),
-                rx.vstack(
-                    rx.text(text),
-                    rx.text(text),
-                ),
-            )
+                rx.vstack(  # Los títulos y lo subti. de los botones
+                    rx.text(text, style=styles.button_tittle_style),
+                    rx.text(text, style=styles.button_body_style),
+                ),  # Los títulos y lo subti. de los botones
+            ),
         ),
         href=url,
         is_external=True,

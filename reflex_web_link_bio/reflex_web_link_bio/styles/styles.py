@@ -19,7 +19,7 @@ class Size(Enum):
 
 # Ya no se utiliza px sino em como tamaño de fuente de mi aplicación
 
-# EStilo general de botones como dicionario
+# Estilo general de botones como dicionario
 BASE_STYLES = {
     # Mapa de propiedades para el botón
     rx.Button: {
@@ -27,6 +27,15 @@ BASE_STYLES = {
         "height": "100px",
         "display": "block",
         "padding": Size.SMALL.value,
-        "border_radius": Size.DEFAULT.value,
-    }
+        "border_radius": Size.SMALL.value,
+    },
+    rx.Link: {"text_decoration": "done", "_hover": {}},
 }
+
+# Estilo del título del botón
+button_tittle_style = dict(
+    font_size=Size.DEFAULT.value,
+)
+
+# Estilo texto cuerpo
+button_body_style = dict(font_size=Size.DEFAULT.value)
