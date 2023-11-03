@@ -86,12 +86,12 @@ export default function Component() {
   <Button sx={{"width": "100%", "height": "100px", "display": "block", "padding": "0.5em", "borderRadius": "0.5em"}}>
   <HStack>
   <ArrowForwardIcon/>
-  <VStack>
+  <VStack sx={{"alignItems": "start"}}>
   <Text sx={{"fontSize": "1em"}}>
   {`Twitch`}
 </Text>
-  <Text sx={{"fontSize": "1em"}}>
-  {`Twitch`}
+  <Text sx={{"fontSize": "0.8em"}}>
+  {`Canal de directos`}
 </Text>
 </VStack>
 </HStack>
@@ -101,12 +101,12 @@ export default function Component() {
   <Button sx={{"width": "100%", "height": "100px", "display": "block", "padding": "0.5em", "borderRadius": "0.5em"}}>
   <HStack>
   <ArrowForwardIcon/>
-  <VStack>
+  <VStack sx={{"alignItems": "start"}}>
   <Text sx={{"fontSize": "1em"}}>
-  {`Github - Repositorio`}
+  {`Github`}
 </Text>
-  <Text sx={{"fontSize": "1em"}}>
-  {`Github - Repositorio`}
+  <Text sx={{"fontSize": "0.8em"}}>
+  {`Mi repositorio`}
 </Text>
 </VStack>
 </HStack>
@@ -116,12 +116,12 @@ export default function Component() {
   <Button sx={{"width": "100%", "height": "100px", "display": "block", "padding": "0.5em", "borderRadius": "0.5em"}}>
   <HStack>
   <ArrowForwardIcon/>
-  <VStack>
+  <VStack sx={{"alignItems": "start"}}>
   <Text sx={{"fontSize": "1em"}}>
   {`YouTube - Canal oficial de Leonardo`}
 </Text>
-  <Text sx={{"fontSize": "1em"}}>
-  {`YouTube - Canal oficial de Leonardo`}
+  <Text sx={{"fontSize": "0.8em"}}>
+  {`Mi canal de vídeos`}
 </Text>
 </VStack>
 </HStack>
@@ -131,12 +131,12 @@ export default function Component() {
   <Button sx={{"width": "100%", "height": "100px", "display": "block", "padding": "0.5em", "borderRadius": "0.5em"}}>
   <HStack>
   <ArrowForwardIcon/>
-  <VStack>
+  <VStack sx={{"alignItems": "start"}}>
   <Text sx={{"fontSize": "1em"}}>
   {`Discord`}
 </Text>
-  <Text sx={{"fontSize": "1em"}}>
-  {`Discord`}
+  <Text sx={{"fontSize": "0.8em"}}>
+  {`Encuentros en Dsicord`}
 </Text>
 </VStack>
 </HStack>

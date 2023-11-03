@@ -13,6 +13,7 @@ MAX_WIDTH = "560px"  # lO COLOCAMOS COMO UNA COSTANTE A MI VARIABLE DE ESTILOS Y
 # MARGENES SIZES
 class Size(Enum):
     SMALL = "0.5em"  # Equivale a 8px
+    MEDIUN = "0.8em"
     DEFAULT = "1em"  # --> 16px
     BIG = "2em"  # --> 32px
 
@@ -38,4 +39,4 @@ button_tittle_style = dict(
 )
 
 # Estilo texto cuerpo
-button_body_style = dict(font_size=Size.DEFAULT.value)
+button_body_style = dict(font_size=Size.MEDIUN.value)

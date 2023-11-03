@@ -9,13 +9,24 @@ def links() -> rx.Component:
     return rx.vstack(
         # rx.button("Twitch", color="white", background_color="purple", padding_x="100px") => Esto era cuanod el boton era simple
         # llamando función componente
-        link_button("Twitch", "https://twitch.tv/publeonardo1"),
-        link_button("Github - Repositorio", "https://github.com/Publeonard1"),
         link_button(
-            "YouTube - Canal oficial de Leonardo", "https://youtube.com/leonardo1mc"
+            "Twitch",  # link_button --> del fichero link_button
+            "Canal de directos",
+            "https://twitch.tv/publeonardo1",
+        ),
+        link_button(
+            "Github",  # link_button --> del fichero link_button
+            "Mi repositorio",
+            "https://github.com/Publeonard1",
+        ),
+        link_button(
+            "YouTube - Canal oficial de Leonardo",
+            "Mi canal de vídeos",
+            "https://youtube.com/leonardo1mc",
         ),
         link_button(
             "Discord",
+            "Encuentros en Dsicord",
             "https://https://discord.com/channels/729672926432985098/1004479046207410366",
         ),
         width="100%",  # Me ocupa todo el espacio que tengo con el cuadro de descripción

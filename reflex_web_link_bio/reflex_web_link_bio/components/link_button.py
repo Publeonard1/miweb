@@ -9,7 +9,7 @@ import reflex_web_link_bio.styles.styles as styles  # Se puede llmara el styles 
 
 
 # Ahora quiero darle parámetro de texto a la función tipo text: str
-def link_button(text: str, url: str) -> rx.Component:
+def link_button(title: str, body: str, url: str) -> rx.Component:
     # Ahora quiero maquetar todo el boton desde el inicio con lo que se ha aprendido
     return rx.link(
         rx.button(
@@ -18,8 +18,9 @@ def link_button(text: str, url: str) -> rx.Component:
                     tag="arrow_forward",
                 ),
                 rx.vstack(  # Los títulos y lo subti. de los botones
-                    rx.text(text, style=styles.button_tittle_style),
-                    rx.text(text, style=styles.button_body_style),
+                    rx.text(title, style=styles.button_tittle_style),
+                    rx.text(body, style=styles.button_body_style),
+                    aligN_items="start",
                 ),  # Los títulos y lo subti. de los botones
             ),
         ),
