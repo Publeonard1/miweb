@@ -64,8 +64,8 @@ export default function Component() {
 )}
 </Fragment>
   <Box>
-  <HStack sx={{"position": "stichy", "bg": "#3a12fa", "padding": "12px", "zIndex": "999"}}>
-  <Text sx={{"height": "40px", "color": "White"}}>
+  <HStack sx={{"position": "stichy", "bg": "#BDBDBD", "padding": "8px", "zIndex": "999"}}>
+  <Text sx={{"height": "40px", "color": "#6600FF"}}>
   {`Publeonard`}
 </Text>
 </HStack>
@@ -83,7 +83,7 @@ export default function Component() {
 </VStack>
   <VStack sx={{"width": "100%"}}>
   <Heading sx={{"size": "sm", "width": "100%", "paddingTop": "1em"}}>
-  {`Mis redes de contacto`}
+  {`Mis canales`}
 </Heading>
   <Link as={NextLink} href={`https://twitch.tv/publeonardo1`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
   <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em"}}>
@@ -95,6 +95,69 @@ export default function Component() {
 </Text>
   <Text sx={{"fontSize": "0.8em"}}>
   {`Canal de directos`}
+</Text>
+</VStack>
+</HStack>
+</Button>
+</Link>
+  <Link as={NextLink} href={`https://github.com/Publeonard1`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
+  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em"}}>
+  <HStack>
+  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
+  <VStack alignItems={`start`}>
+  <Text sx={{"fontSize": "1em"}}>
+  {`Github`}
+</Text>
+  <Text sx={{"fontSize": "0.8em"}}>
+  {`Mi repositorio`}
+</Text>
+</VStack>
+</HStack>
+</Button>
+</Link>
+  <Link as={NextLink} href={`https://youtube.com/leonardo1mc`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
+  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em"}}>
+  <HStack>
+  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
+  <VStack alignItems={`start`}>
+  <Text sx={{"fontSize": "1em"}}>
+  {`YouTube - Canal oficial de Leonardo`}
+</Text>
+  <Text sx={{"fontSize": "0.8em"}}>
+  {`Mi canal de vídeos`}
+</Text>
+</VStack>
+</HStack>
+</Button>
+</Link>
+  <Link as={NextLink} href={`https://https://discord.com/channels/729672926432985098/1004479046207410366`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
+  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em"}}>
+  <HStack>
+  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
+  <VStack alignItems={`start`}>
+  <Text sx={{"fontSize": "1em"}}>
+  {`Discord`}
+</Text>
+  <Text sx={{"fontSize": "0.8em"}}>
+  {`Encuentros en Dsicord`}
+</Text>
+</VStack>
+</HStack>
+</Button>
+</Link>
+  <Heading sx={{"size": "sm", "width": "100%", "paddingTop": "1em"}}>
+  {`Mis redes sociales.`}
+</Heading>
+  <Link as={NextLink} href={`https://twitch.tv/publeonardo1`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
+  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em"}}>
+  <HStack>
+  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
+  <VStack alignItems={`start`}>
+  <Text sx={{"fontSize": "1em"}}>
+  {`Instagram`}
+</Text>
+  <Text sx={{"fontSize": "0.8em"}}>
+  {`@leonardo1m.c`}
 </Text>
 </VStack>
 </HStack>

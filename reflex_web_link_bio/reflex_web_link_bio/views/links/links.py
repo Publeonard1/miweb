@@ -10,12 +10,36 @@ from reflex_web_link_bio.components.title import title
 # 3️⃣Se crea el componente de links quee pueden ser textos o imagenes donde me van a conducir a otras vistas o páginas
 def links() -> rx.Component:
     return rx.vstack(
-        title("Mis redes de contacto"),  # 7️⃣🅾
+        title("Mis canales"),  # 7️⃣🅾
         # rx.button("Twitch", color="white", background_color="purple", padding_x="100px") => Esto era cuanod el boton era simple
         # llamando función componente
         link_button(
             "Twitch",  # link_button --> del fichero link_button
             "Canal de directos",
+            "https://twitch.tv/publeonardo1",
+        ),
+        link_button(
+            "Github",  # link_button --> del fichero link_button
+            "Mi repositorio",
+            "https://github.com/Publeonard1",
+        ),
+        link_button(
+            "YouTube - Canal oficial de Leonardo",
+            "Mi canal de vídeos",
+            "https://youtube.com/leonardo1mc",
+        ),
+        link_button(
+            "Discord",
+            "Encuentros en Dsicord",
+            "https://https://discord.com/channels/729672926432985098/1004479046207410366",
+        ),
+        # Bloque copiado 2 7️⃣🆎 y nombrando este bloque copiado de botones con título "Redes sociales "
+        title("Mis redes sociales."),
+        # rx.button("Twitch", color="white", background_color="purple", padding_x="100px") => Esto era cuanod el boton era simple
+        # llamando función componente
+        link_button(
+            "Instagram",  # link_button --> del fichero link_button
+            "@leonardo1m.c",
             "https://twitch.tv/publeonardo1",
         ),
         link_button(
