@@ -3,7 +3,7 @@ import { useRouter } from "next/router"
 import { Event, getAllLocalStorageItems, getRefValue, getRefValues, isTrue, preventDefault, refs, spreadArraysOrObjects, uploadFiles, useEventLoop } from "/utils/state"
 import { EventLoopContext, initialEvents, StateContext } from "/utils/context.js"
 import "focus-visible/dist/focus-visible"
-import { Avatar, Box, Button, Center, HStack, Image, Link, Modal, ModalBody, ModalContent, ModalHeader, ModalOverlay, Text, useColorMode, VStack } from "@chakra-ui/react"
+import { Avatar, Box, Button, Center, Heading, HStack, Image, Link, Modal, ModalBody, ModalContent, ModalHeader, ModalOverlay, Text, useColorMode, VStack } from "@chakra-ui/react"
 import NextLink from "next/link"
 import { ArrowForwardIcon } from "@chakra-ui/icons"
 import NextHead from "next/head"
@@ -82,11 +82,14 @@ export default function Component() {
 </Text>
 </VStack>
   <VStack sx={{"width": "100%"}}>
+  <Heading sx={{"size": "sm", "width": "100%", "paddingTop": "1em"}}>
+  {`Mis redes de contacto`}
+</Heading>
   <Link as={NextLink} href={`https://twitch.tv/publeonardo1`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
-  <Button sx={{"width": "100%", "height": "100px", "display": "block", "padding": "0.5em", "borderRadius": "0.5em"}}>
+  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em"}}>
   <HStack>
-  <ArrowForwardIcon/>
-  <VStack sx={{"alignItems": "start"}}>
+  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
+  <VStack alignItems={`start`}>
   <Text sx={{"fontSize": "1em"}}>
   {`Twitch`}
 </Text>
@@ -98,10 +101,10 @@ export default function Component() {
 </Button>
 </Link>
   <Link as={NextLink} href={`https://github.com/Publeonard1`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
-  <Button sx={{"width": "100%", "height": "100px", "display": "block", "padding": "0.5em", "borderRadius": "0.5em"}}>
+  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em"}}>
   <HStack>
-  <ArrowForwardIcon/>
-  <VStack sx={{"alignItems": "start"}}>
+  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
+  <VStack alignItems={`start`}>
   <Text sx={{"fontSize": "1em"}}>
   {`Github`}
 </Text>
@@ -113,10 +116,10 @@ export default function Component() {
 </Button>
 </Link>
   <Link as={NextLink} href={`https://youtube.com/leonardo1mc`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
-  <Button sx={{"width": "100%", "height": "100px", "display": "block", "padding": "0.5em", "borderRadius": "0.5em"}}>
+  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em"}}>
   <HStack>
-  <ArrowForwardIcon/>
-  <VStack sx={{"alignItems": "start"}}>
+  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
+  <VStack alignItems={`start`}>
   <Text sx={{"fontSize": "1em"}}>
   {`YouTube - Canal oficial de Leonardo`}
 </Text>
@@ -128,10 +131,10 @@ export default function Component() {
 </Button>
 </Link>
   <Link as={NextLink} href={`https://https://discord.com/channels/729672926432985098/1004479046207410366`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
-  <Button sx={{"width": "100%", "height": "100px", "display": "block", "padding": "0.5em", "borderRadius": "0.5em"}}>
+  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em"}}>
   <HStack>
-  <ArrowForwardIcon/>
-  <VStack sx={{"alignItems": "start"}}>
+  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
+  <VStack alignItems={`start`}>
   <Text sx={{"fontSize": "1em"}}>
   {`Discord`}
 </Text>
