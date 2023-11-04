@@ -15,12 +15,15 @@ def link_button(title: str, body: str, url: str) -> rx.Component:
         rx.button(
             rx.hstack(
                 rx.icon(
+                    # icono de perfil
                     tag="arrow_forward",
+                    width=styles.Size.BIG.value,
+                    heigh=styles.Size.BIG.value,
                 ),
                 rx.vstack(  # Los títulos y lo subti. de los botones
                     rx.text(title, style=styles.button_tittle_style),
                     rx.text(body, style=styles.button_body_style),
-                    aligN_items="start",
+                    align_items="start",
                 ),  # Los títulos y lo subti. de los botones
             ),
         ),

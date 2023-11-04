@@ -3,10 +3,14 @@ import reflex as rx
 # 4️⃣🅰 Impotando el fichero de link_button y hacer el boton como un link
 from reflex_web_link_bio.components.link_button import link_button
 
+# 7️⃣🅾 Importamos el fichero title que es para desarrolar el titulo del bloque de botones en este fichero
+from reflex_web_link_bio.components.title import title
+
 
 # 3️⃣Se crea el componente de links quee pueden ser textos o imagenes donde me van a conducir a otras vistas o páginas
 def links() -> rx.Component:
     return rx.vstack(
+        title("Mis redes de contacto"),  # 7️⃣🅾
         # rx.button("Twitch", color="white", background_color="purple", padding_x="100px") => Esto era cuanod el boton era simple
         # llamando función componente
         link_button(

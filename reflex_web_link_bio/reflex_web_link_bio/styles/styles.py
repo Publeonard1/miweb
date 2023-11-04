@@ -25,13 +25,20 @@ BASE_STYLES = {
     # Mapa de propiedades para el botón
     rx.Button: {
         "width": "100%",  # Que me ocupe el 100% de ese contenedor
-        "height": "100px",
+        "height": "100%",
         "display": "block",
         "padding": Size.SMALL.value,
         "border_radius": Size.SMALL.value,
     },
     rx.Link: {"text_decoration": "done", "_hover": {}},
 }
+
+# 7️⃣🅰Estilos del título del bloque de botones 7️⃣🅱
+title_style = dict(
+    size="sm",
+    width="100%",
+    padding_top=Size.DEFAULT.value,
+)
 
 # Estilo del título del botón
 button_tittle_style = dict(
