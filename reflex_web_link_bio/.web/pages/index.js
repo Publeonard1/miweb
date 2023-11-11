@@ -5,7 +5,7 @@ import { EventLoopContext, initialEvents, StateContext } from "/utils/context.js
 import "focus-visible/dist/focus-visible"
 import { Avatar, Box, Button, Center, Heading, HStack, Image, Link, Modal, ModalBody, ModalContent, ModalHeader, ModalOverlay, Text, useColorMode, VStack } from "@chakra-ui/react"
 import NextLink from "next/link"
-import { ArrowForwardIcon } from "@chakra-ui/icons"
+import { ArrowForwardIcon, LinkIcon } from "@chakra-ui/icons"
 import NextHead from "next/head"
 
 
@@ -64,25 +64,43 @@ export default function Component() {
 )}
 </Fragment>
   <Box>
-  <HStack sx={{"position": "stichy", "bg": "#BDBDBD", "padding": "8px", "zIndex": "999"}}>
-  <Text sx={{"height": "40px", "color": "#6600FF"}}>
+  <HStack sx={{"position": "stichy", "bg": "lightgray", "paddingX": "1em", "paddingY": "0.5em", "zIndex": "999", "top": "0"}}>
+  <Text>
   {`Publeonard`}
 </Text>
 </HStack>
   <Center>
   <VStack sx={{"colorText": "Black", "maxWidth": "560px", "width": "100%", "marginY": "2em"}}>
-  <VStack sx={{"fontFamily": "Gill Sans Extrabold", "textAlign": "justify"}}>
-  <Avatar size={`sm`}/>
-  <Text sx={{"textShadow": "2px 2px 4px #1f1f1f"}}>
-  {`¡Hola! 👋🏻. Soy Leonardo Moreno Cubides`}
+  <VStack spacing={`2em`} sx={{"fontFamily": "system-ui", "alingItems": "start"}}>
+  <HStack>
+  <Avatar name={`Publio Leonardo Moreno Cubides `} size={`lg`} sx={{"fontFamily": "system-ui"}}/>
+  <VStack sx={{"alingItems": "start"}}>
+  <Heading size={`md`}>
+  {`Leonardo Moreno`}
+</Heading>
+  <Text sx={{"margingTop": "0px !important"}}>
+  {`@Publeonard1`}
 </Text>
+  <HStack>
+  <Link as={NextLink} href={`https//x.com/LeonardoMorCub`} isExternal={true} sx={{"textDecoration": "done", "_hover": {}}}>
+  <LinkIcon/>
+</Link>
+  <Link as={NextLink} href={`https//x.com/LeonardoMorCub`} isExternal={true} sx={{"textDecoration": "done", "_hover": {}}}>
+  <LinkIcon/>
+</Link>
+  <Link as={NextLink} href={`https//x.com/LeonardoMorCub`} isExternal={true} sx={{"textDecoration": "done", "_hover": {}}}>
+  <LinkIcon/>
+</Link>
+</HStack>
+</VStack>
+</HStack>
   <Text>
   {` 👩🏻‍🔧Soy Ingeniero Mecánico y 👩🏻‍💻diseñador mecánico de detalle con experiencia en el sector y quiero automatizar los procesos mecánicos que tiene la industria
                  y el sector automotor con las nuevas tecnologías.  `}
 </Text>
 </VStack>
   <VStack sx={{"width": "100%"}}>
-  <Heading sx={{"size": "sm", "width": "100%", "paddingTop": "1em"}}>
+  <Heading size={`sm`} sx={{"width": "100%", "paddingTop": "1em"}}>
   {`Mis canales`}
 </Heading>
   <Link as={NextLink} href={`https://twitch.tv/publeonardo1`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
@@ -145,7 +163,7 @@ export default function Component() {
 </HStack>
 </Button>
 </Link>
-  <Heading sx={{"size": "sm", "width": "100%", "paddingTop": "1em"}}>
+  <Heading size={`sm`} sx={{"width": "100%", "paddingTop": "1em"}}>
   {`Mis redes sociales.`}
 </Heading>
   <Link as={NextLink} href={`https://twitch.tv/publeonardo1`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>

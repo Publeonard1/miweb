@@ -35,7 +35,6 @@ BASE_STYLES = {
 
 # 7️⃣🅰Estilos del título del bloque de botones 7️⃣🅱
 title_style = dict(
-    size="sm",
     width="100%",
     padding_top=Size.DEFAULT.value,
 )
