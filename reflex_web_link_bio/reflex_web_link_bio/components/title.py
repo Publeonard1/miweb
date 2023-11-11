@@ -12,6 +12,7 @@ def title(text: str) -> rx.Component:
         # 7️⃣🅰Ahora yo quiero agregar estos estilos y editarlos directamente en el fichero de estilos
         # size="lg",
         # width="100%",
+        size="sm",
         style=styles.title_style,  # 7️⃣🅱 Edita y para importando los estilos del titulo para el bloque de botones
     )
     # 7️⃣🅾 Ahora con esto importamos este componente dentro del fichero de links.py
