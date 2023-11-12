@@ -6,6 +6,9 @@ from reflex_web_link_bio.components.link_button import link_button
 # 7️⃣🅾 Importamos el fichero title que es para desarrolar el titulo del bloque de botones en este fichero
 from reflex_web_link_bio.components.title import title
 
+# Boque de tamaños generico
+from reflex_web_link_bio.styles.styles import Size as Size
+
 
 # 3️⃣Se crea el componente de links quee pueden ser textos o imagenes donde me van a conducir a otras vistas o páginas
 def links() -> rx.Component:
@@ -58,6 +61,7 @@ def links() -> rx.Component:
             "https://https://discord.com/channels/729672926432985098/1004479046207410366",
         ),
         width="100%",  # Me ocupa todo el espacio que tengo con el cuadro de descripción
+        spacing=Size.MEDIUN.value,
     )
 
 

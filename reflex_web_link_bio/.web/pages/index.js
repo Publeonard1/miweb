@@ -3,7 +3,7 @@ import { useRouter } from "next/router"
 import { Event, getAllLocalStorageItems, getRefValue, getRefValues, isTrue, preventDefault, refs, spreadArraysOrObjects, uploadFiles, useEventLoop } from "/utils/state"
 import { EventLoopContext, initialEvents, StateContext } from "/utils/context.js"
 import "focus-visible/dist/focus-visible"
-import { Avatar, Box, Button, Center, Heading, HStack, Image, Link, Modal, ModalBody, ModalContent, ModalHeader, ModalOverlay, Text, useColorMode, VStack } from "@chakra-ui/react"
+import { Avatar, Box, Button, Center, Flex, Heading, HStack, Image, Link, Modal, ModalBody, ModalContent, ModalHeader, ModalOverlay, Spacer, Text, useColorMode, VStack } from "@chakra-ui/react"
 import NextLink from "next/link"
 import { ArrowForwardIcon, LinkIcon } from "@chakra-ui/icons"
 import NextHead from "next/head"
@@ -71,14 +71,14 @@ export default function Component() {
 </HStack>
   <Center>
   <VStack sx={{"colorText": "Black", "maxWidth": "560px", "width": "100%", "marginY": "2em"}}>
-  <VStack spacing={`2em`} sx={{"fontFamily": "system-ui", "alingItems": "start"}}>
+  <VStack spacing={`2em`} sx={{"fontFamily": "system-ui", "textAlign": "justify", "alingItems": "start"}}>
   <HStack>
   <Avatar name={`Publio Leonardo Moreno Cubides `} size={`lg`} sx={{"fontFamily": "system-ui"}}/>
-  <VStack sx={{"alingItems": "start"}}>
+  <VStack spacing={`1em`} sx={{"alingItems": "start"}}>
   <Heading size={`md`}>
   {`Leonardo Moreno`}
 </Heading>
-  <Text sx={{"margingTop": "0px !important"}}>
+  <Text sx={{"marginTop": "0px !important"}}>
   {`@Publeonard1`}
 </Text>
   <HStack>
@@ -94,13 +94,35 @@ export default function Component() {
 </HStack>
 </VStack>
 </HStack>
+  <Flex sx={{"width": "100%"}}>
+  <Box sx={{"fontSize": "0.8em"}}>
+  <Text as={`span`} sx={{"fontWeight": "bold", "color": "blue"}}>
+  {`+2`}
+</Text>
+  {` Años de experiencia`}
+</Box>
+  <Spacer/>
+  <Box sx={{"fontSize": "0.8em"}}>
+  <Text as={`span`} sx={{"fontWeight": "bold", "color": "blue"}}>
+  {`+2`}
+</Text>
+  {` Años de experiencia`}
+</Box>
+  <Spacer/>
+  <Box sx={{"fontSize": "0.8em"}}>
+  <Text as={`span`} sx={{"fontWeight": "bold", "color": "blue"}}>
+  {`+2`}
+</Text>
+  {` Años de experiencia`}
+</Box>
+</Flex>
   <Text>
-  {` 👩🏻‍🔧Soy Ingeniero Mecánico y 👩🏻‍💻diseñador mecánico de detalle con experiencia en el sector y quiero automatizar los procesos mecánicos que tiene la industria
+  {` 👩🏻‍🔧Soy Ingeniero Mecánico y 👩🏻‍💻diseñador mecánico de detalle con experiencia en el sector y mi propósito automatizar los procesos mecánicos que tiene la industria
                  y el sector automotor con las nuevas tecnologías.  `}
 </Text>
 </VStack>
-  <VStack sx={{"width": "100%"}}>
-  <Heading size={`sm`} sx={{"width": "100%", "paddingTop": "1em"}}>
+  <VStack spacing={`0.8em`} sx={{"width": "100%"}}>
+  <Heading size={`md`} sx={{"width": "100%", "paddingTop": "1em"}}>
   {`Mis canales`}
 </Heading>
   <Link as={NextLink} href={`https://twitch.tv/publeonardo1`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
@@ -163,7 +185,7 @@ export default function Component() {
 </HStack>
 </Button>
 </Link>
-  <Heading size={`sm`} sx={{"width": "100%", "paddingTop": "1em"}}>
+  <Heading size={`md`} sx={{"width": "100%", "paddingTop": "1em"}}>
   {`Mis redes sociales.`}
 </Heading>
   <Link as={NextLink} href={`https://twitch.tv/publeonardo1`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
@@ -229,13 +251,13 @@ export default function Component() {
 </VStack>
 </VStack>
 </Center>
-  <VStack>
+  <VStack sx={{"marginButton": "2em"}}>
   <Image src={`favicon.ico`}/>
-  <Link as={NextLink} href={`https//github.com/Publeonar1`} isExternal={true} sx={{"textDecoration": "done", "_hover": {}}}>
-  {`© 2021-2023. Desde la vinculación en la rama`}
+  <Link as={NextLink} href={`https//github.com/Publeonar1`} isExternal={true} sx={{"fontSize": "0.8em", "textDecoration": "done", "_hover": {}}}>
+  {`© 2021-2023. Publeonard1 By Leonardo Moreno v1.1`}
 </Link>
-  <Text>
-  {`Pie de página del link_bio`}
+  <Text sx={{"fontSize": "0.8em", "margingTop": "0px !important"}}>
+  {`IMAGINING AND CREATING A BETTER WORLD. FROM BOGOTÁ, MY CAPITAL CITY.`}
 </Text>
 </VStack>
 </Box>
