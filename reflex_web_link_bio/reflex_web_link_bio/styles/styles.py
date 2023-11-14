@@ -1,6 +1,11 @@
 import reflex as rx
 from enum import Enum  # librería de python
 
+# 🔟🅰 Importamos y edutadmos el backgraundo que tenemos desde el fichero colors para dejarlo comr 
+from .colors import Color as Color
+
+# 🔟🆎 Importantando bloque de edición de botones para cambiar los botones como la edicón TextColor()
+from .colors import TextColor as TextColor
 
 # Aqui podemos empaquetar todos los estilos de mi aplicación
 
@@ -21,7 +26,9 @@ class Size(Enum):
 # Ya no se utiliza px sino em como tamaño de fuente de mi aplicación
 
 # Estilo general de botones como dicionario
-BASE_STYLES = {
+BASE_STYLE = {
+    "background_color": Color.BACKGROUND.value,
+    # 🔟🅰 con la edición del backgraund importamoso 
     # Mapa de propiedades para el botón
     rx.Button: {
         "width": "100%",  # Que me ocupe el 100% de ese contenedor
@@ -29,6 +36,12 @@ BASE_STYLES = {
         "display": "block",
         "padding": Size.SMALL.value,
         "border_radius": Size.SMALL.value,
+        # 🔟🅱 Agregando nueva edición a al texto y color de los botones
+        "color": TextColor.HEADER.value,
+        "background_color": Color.CONTENT.value,
+        "_hover": {
+            "background_color": Color.SECUNDARY.value,
+        },
     },
     rx.Link: {"text_decoration": "done", "_hover": {}},
 }
