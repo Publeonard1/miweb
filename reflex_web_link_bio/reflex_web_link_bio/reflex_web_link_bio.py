@@ -51,7 +51,7 @@ def index() -> rx.Component:
 
 # Con la variable que se llama app, ejecutamos lo que tenemos de código para que lo muestre en pantalla
 app = rx.App(
-    style=styles.BASE_STYLES  # Esto de golpe me estila todos los botones la app
+    style=styles.BASE_STYLE  # Esto de golpe me estila todos los botones la app
 )  # de tipo rx.App
 app.add_page(
     index
