@@ -64,7 +64,7 @@ export default function Component() {
 )}
 </Fragment>
   <Box>
-  <HStack sx={{"position": "stichy", "bg": "lightgray", "paddingX": "1em", "paddingY": "0.5em", "zIndex": "999", "top": "0"}}>
+  <HStack sx={{"position": "stichy", "bg": "#171F26", "paddingX": "1em", "paddingY": "0.5em", "zIndex": "999", "top": "0"}}>
   <Text>
   {`Publeonard`}
 </Text>
@@ -75,10 +75,10 @@ export default function Component() {
   <HStack>
   <Avatar name={`Publio Leonardo Moreno Cubides `} size={`lg`} sx={{"fontFamily": "system-ui"}}/>
   <VStack spacing={`1em`} sx={{"alingItems": "start"}}>
-  <Heading size={`md`}>
+  <Heading size={`md`} sx={{"color": "#F1F2F4"}}>
   {`Leonardo Moreno`}
 </Heading>
-  <Text sx={{"marginTop": "0px !important"}}>
+  <Text sx={{"marginTop": "0px !important", "color": "#C3C7CB"}}>
   {`@Publeonard1`}
 </Text>
   <HStack>
@@ -95,34 +95,34 @@ export default function Component() {
 </VStack>
 </HStack>
   <Flex sx={{"width": "100%"}}>
-  <Box sx={{"fontSize": "0.8em"}}>
-  <Text as={`span`} sx={{"fontWeight": "bold", "color": "blue"}}>
+  <Box sx={{"fontSize": "0.8em", "color": "#C3C7CB"}}>
+  <Text as={`span`} sx={{"fontWeight": "bold", "color": "#14A1F0"}}>
   {`+2`}
 </Text>
   {` Años de experiencia`}
 </Box>
   <Spacer/>
-  <Box sx={{"fontSize": "0.8em"}}>
-  <Text as={`span`} sx={{"fontWeight": "bold", "color": "blue"}}>
-  {`+2`}
+  <Box sx={{"fontSize": "0.8em", "color": "#C3C7CB"}}>
+  <Text as={`span`} sx={{"fontWeight": "bold", "color": "#14A1F0"}}>
+  {`+100`}
 </Text>
-  {` Años de experiencia`}
+  {` En Instagram`}
 </Box>
   <Spacer/>
-  <Box sx={{"fontSize": "0.8em"}}>
-  <Text as={`span`} sx={{"fontWeight": "bold", "color": "blue"}}>
+  <Box sx={{"fontSize": "0.8em", "color": "#C3C7CB"}}>
+  <Text as={`span`} sx={{"fontWeight": "bold", "color": "#14A1F0"}}>
   {`+2`}
 </Text>
-  {` Años de experiencia`}
+  {` En GitHub`}
 </Box>
 </Flex>
-  <Text>
+  <Text sx={{"color": "#C3C7CB"}}>
   {` 👩🏻‍🔧Soy Ingeniero Mecánico y 👩🏻‍💻diseñador mecánico de detalle con experiencia en el sector y mi propósito automatizar los procesos mecánicos que tiene la industria
                  y el sector automotor con las nuevas tecnologías.  `}
 </Text>
 </VStack>
   <VStack spacing={`0.8em`} sx={{"width": "100%"}}>
-  <Heading size={`md`} sx={{"width": "100%", "paddingTop": "1em"}}>
+  <Heading size={`md`} sx={{"width": "100%", "paddingTop": "1em", "color": "#F1F2F4"}}>
   {`Mis canales`}
 </Heading>
   <Link as={NextLink} href={`https://twitch.tv/publeonardo1`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
@@ -130,10 +130,10 @@ export default function Component() {
   <HStack>
   <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
   <VStack alignItems={`start`}>
-  <Text sx={{"fontSize": "1em"}}>
+  <Text sx={{"fontSize": "1em", "color": "#F1F2F4"}}>
   {`Twitch`}
 </Text>
-  <Text sx={{"fontSize": "0.8em"}}>
+  <Text sx={{"fontSize": "0.8em", "color": "#C3C7CB"}}>
   {`Canal de directos`}
 </Text>
 </VStack>
@@ -145,10 +145,10 @@ export default function Component() {
   <HStack>
   <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
   <VStack alignItems={`start`}>
-  <Text sx={{"fontSize": "1em"}}>
+  <Text sx={{"fontSize": "1em", "color": "#F1F2F4"}}>
   {`Github`}
 </Text>
-  <Text sx={{"fontSize": "0.8em"}}>
+  <Text sx={{"fontSize": "0.8em", "color": "#C3C7CB"}}>
   {`Mi repositorio`}
 </Text>
 </VStack>
@@ -160,10 +160,10 @@ export default function Component() {
   <HStack>
   <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
   <VStack alignItems={`start`}>
-  <Text sx={{"fontSize": "1em"}}>
+  <Text sx={{"fontSize": "1em", "color": "#F1F2F4"}}>
   {`YouTube - Canal oficial de Leonardo`}
 </Text>
-  <Text sx={{"fontSize": "0.8em"}}>
+  <Text sx={{"fontSize": "0.8em", "color": "#C3C7CB"}}>
   {`Mi canal de vídeos`}
 </Text>
 </VStack>
@@ -175,17 +175,17 @@ export default function Component() {
   <HStack>
   <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
   <VStack alignItems={`start`}>
-  <Text sx={{"fontSize": "1em"}}>
+  <Text sx={{"fontSize": "1em", "color": "#F1F2F4"}}>
   {`Discord`}
 </Text>
-  <Text sx={{"fontSize": "0.8em"}}>
+  <Text sx={{"fontSize": "0.8em", "color": "#C3C7CB"}}>
   {`Encuentros en Dsicord`}
 </Text>
 </VStack>
 </HStack>
 </Button>
 </Link>
-  <Heading size={`md`} sx={{"width": "100%", "paddingTop": "1em"}}>
+  <Heading size={`md`} sx={{"width": "100%", "paddingTop": "1em", "color": "#F1F2F4"}}>
   {`Mis redes sociales.`}
 </Heading>
   <Link as={NextLink} href={`https://twitch.tv/publeonardo1`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
@@ -193,10 +193,10 @@ export default function Component() {
   <HStack>
   <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
   <VStack alignItems={`start`}>
-  <Text sx={{"fontSize": "1em"}}>
+  <Text sx={{"fontSize": "1em", "color": "#F1F2F4"}}>
   {`Instagram`}
 </Text>
-  <Text sx={{"fontSize": "0.8em"}}>
+  <Text sx={{"fontSize": "0.8em", "color": "#C3C7CB"}}>
   {`@leonardo1m.c`}
 </Text>
 </VStack>
@@ -208,10 +208,10 @@ export default function Component() {
   <HStack>
   <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
   <VStack alignItems={`start`}>
-  <Text sx={{"fontSize": "1em"}}>
+  <Text sx={{"fontSize": "1em", "color": "#F1F2F4"}}>
   {`Github`}
 </Text>
-  <Text sx={{"fontSize": "0.8em"}}>
+  <Text sx={{"fontSize": "0.8em", "color": "#C3C7CB"}}>
   {`Mi repositorio`}
 </Text>
 </VStack>
@@ -223,10 +223,10 @@ export default function Component() {
   <HStack>
   <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
   <VStack alignItems={`start`}>
-  <Text sx={{"fontSize": "1em"}}>
+  <Text sx={{"fontSize": "1em", "color": "#F1F2F4"}}>
   {`YouTube - Canal oficial de Leonardo`}
 </Text>
-  <Text sx={{"fontSize": "0.8em"}}>
+  <Text sx={{"fontSize": "0.8em", "color": "#C3C7CB"}}>
   {`Mi canal de vídeos`}
 </Text>
 </VStack>
@@ -238,10 +238,10 @@ export default function Component() {
   <HStack>
   <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
   <VStack alignItems={`start`}>
-  <Text sx={{"fontSize": "1em"}}>
+  <Text sx={{"fontSize": "1em", "color": "#F1F2F4"}}>
   {`Discord`}
 </Text>
-  <Text sx={{"fontSize": "0.8em"}}>
+  <Text sx={{"fontSize": "0.8em", "color": "#C3C7CB"}}>
   {`Encuentros en Dsicord`}
 </Text>
 </VStack>
@@ -251,7 +251,7 @@ export default function Component() {
 </VStack>
 </VStack>
 </Center>
-  <VStack sx={{"marginButton": "2em"}}>
+  <VStack sx={{"marginButton": "2em", "paddingBottom": "2em", "color": "#A3ABB2"}}>
   <Image src={`favicon.ico`}/>
   <Link as={NextLink} href={`https//github.com/Publeonar1`} isExternal={true} sx={{"fontSize": "0.8em", "textDecoration": "done", "_hover": {}}}>
   {`© 2021-2023. Publeonard1 By Leonardo Moreno v1.1`}

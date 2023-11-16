@@ -5,8 +5,11 @@ from reflex_web_link_bio.styles.styles import Size as Size
 # 8️⃣🅱 importante el fichero link_icon.py
 from reflex_web_link_bio.components.link_icon import link_icon
 
-# 9️⃣🅰 Importamos el fichero in 
+# 9️⃣🅰 Importamos el fi 
 from reflex_web_link_bio.components.info_text import info_text
+
+# 🔟🅱 Importamos el TextColor del fichero colors.py para editar el color de fuente del texto principal
+from reflex_web_link_bio.styles.colors import TextColor as TextColor
 
 
 # Vamos a hacer una función que nos muestre el encabezado de la página y que este de forma vertical
@@ -24,10 +27,12 @@ def header() -> rx.Component:
                 rx.heading(
                     "Leonardo Moreno",
                     size="md",
+                    color=TextColor.HEADER.value,  # 🔟🅱
                 ),
                 rx.text(
                     "@Publeonard1",
-                    margin_top="0px !important",  # Este es unn margen
+                    margin_top=Size.ZERO.value,  # Este es unn margen
+                    color=TextColor.BODY.value,  # 🔟🅱
                 ),
                 rx.hstack(
                     # 8️⃣🆎 pasamos el link de la dirección de la pág, que queremos conducir
@@ -43,14 +48,15 @@ def header() -> rx.Component:
             # 9️⃣🅱 Se llama a la función como componente para editar el perfil de experiencia y se toma el flex como contenedor
             info_text("+2", "Años de experiencia"),
             rx.spacer(),  # Que me hace un espacio dentro del contenedor
-            info_text("+2", "Años de experiencia"),
+            info_text("+100", "En Instagram"),
             rx.spacer(),
-            info_text("+2", "Años de experiencia"),
+            info_text("+2", "En GitHub"),
             width="100%",
         ),
         rx.text(
             """ 👩🏻‍🔧Soy Ingeniero Mecánico y 👩🏻‍💻diseñador mecánico de detalle con experiencia en el sector y mi propósito automatizar los procesos mecánicos que tiene la industria
-                 y el sector automotor con las nuevas tecnologías.  """
+                 y el sector automotor con las nuevas tecnologías.  """,
+            color=TextColor.BODY.value,  # 🔟🅱
         ),
         spacing=Size.BIG.value,
         font_family="system-ui",

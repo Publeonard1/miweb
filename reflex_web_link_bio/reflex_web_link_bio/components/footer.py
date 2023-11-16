@@ -4,6 +4,9 @@ import datetime
 # Vamos a importar el Size generico
 from reflex_web_link_bio.styles.styles import Size as Size
 
+# 🔟🅱 Importamos el color del texto desde colors.py
+from reflex_web_link_bio.styles.colors import TextColor as TextColor
+
 
 # 5️⃣ Guardando e importando el footer en index
 def footer() -> rx.Component:
@@ -21,9 +24,11 @@ def footer() -> rx.Component:
         rx.text(
             """IMAGINING AND CREATING A BETTER WORLD. FROM BOGOTÁ, MY CAPITAL CITY.""",
             font_size=Size.MEDIUN.value,
-            marging_top="0px !important",
+            marging_top=Size.ZERO.value,
         ),
         margin_button=Size.BIG.value,
+        padding_bottom=Size.BIG.value,
+        color=TextColor.FOOTER.value,
     )
 
 

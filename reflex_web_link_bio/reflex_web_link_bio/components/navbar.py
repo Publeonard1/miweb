@@ -1,6 +1,9 @@
 import reflex as rx
 from reflex_web_link_bio.styles.styles import Size as Size
 
+# 🔟🅱 Importamos el textColor desde colors.py
+from reflex_web_link_bio.styles.colors import Color as Color
+
 
 # Como hacemos un componente con una funicón
 def navbar() -> rx.Component:  # Copio el componente que se hizo prviamente
@@ -9,7 +12,7 @@ def navbar() -> rx.Component:  # Copio el componente que se hizo prviamente
             "Publeonard",  # Nombre
         ),
         position="stichy",
-        bg="lightgray",  # Color de la barra
+        bg=Color.CONTENT.value,  # Color de la barra # 🔟🅱
         padding_x=Size.DEFAULT.value,  # Nos indica marcar espacios hacía afuera
         padding_y=Size.SMALL.value,  # Que va estar simepre en la parte superior
         z_index="999",
