@@ -1,7 +1,7 @@
 import reflex as rx
 from enum import Enum  # librería de python
 
-# 🔟🅰 Importamos y edutadmos el backgraundo que tenemos desde el fichero colors para dejarlo comr 
+# 🔟🅰 Importamos y edutadmos el backgraundo que tenemos desde el fichero colors para der 
 from .colors import Color as Color
 
 # 🔟🆎 Importantando bloque de edición de botones para cambiar los botones como la edicón TextColor()
@@ -17,6 +17,7 @@ MAX_WIDTH = "560px"  # lO COLOCAMOS COMO UNA COSTANTE A MI VARIABLE DE ESTILOS Y
 
 # MARGENES SIZES
 class Size(Enum):
+    ZERO = "0px !important"
     SMALL = "0.5em"  # Equivale a 8px
     MEDIUN = "0.8em"
     DEFAULT = "1em"  # --> 16px
@@ -28,7 +29,7 @@ class Size(Enum):
 # Estilo general de botones como dicionario
 BASE_STYLE = {
     "background_color": Color.BACKGROUND.value,
-    # 🔟🅰 con la edición del backgraund importamoso 
+    # 🔟🅰 con la edición del backgraund io 
     # Mapa de propiedades para el botón
     rx.Button: {
         "width": "100%",  # Que me ocupe el 100% de ese contenedor
@@ -50,12 +51,17 @@ BASE_STYLE = {
 title_style = dict(
     width="100%",
     padding_top=Size.DEFAULT.value,
+    color=TextColor.HEADER.value,
 )
 
 # Estilo del título del botón
 button_tittle_style = dict(
     font_size=Size.DEFAULT.value,
+    color=TextColor.HEADER.value,  # 🔟🅱 Modificando el color del texto en el n 
 )
 
 # Estilo texto cuerpo
-button_body_style = dict(font_size=Size.MEDIUN.value)
+button_body_style = dict(
+    font_size=Size.MEDIUN.value,
+    color=TextColor.BODY.value,  # 🔟🅱 Modificando el color del texto en el botón
+)
