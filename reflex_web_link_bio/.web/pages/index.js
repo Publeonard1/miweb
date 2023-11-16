@@ -65,6 +65,14 @@ export default function Component() {
 </Fragment>
   <Box>
   <HStack sx={{"position": "stichy", "bg": "#171F26", "paddingX": "1em", "paddingY": "0.5em", "zIndex": "999", "top": "0"}}>
+  <Box sx={{"fontFamily": "Comfortaa-Medium", "fontSize": "1.5em"}}>
+  <Text as={`span`} sx={{"color": "#14A1F0"}}>
+  {`Pub`}
+</Text>
+  <Text as={`span`} sx={{"color": "#3300CC"}}>
+  {`leonard`}
+</Text>
+</Box>
   <Text>
   {`Publeonard`}
 </Text>

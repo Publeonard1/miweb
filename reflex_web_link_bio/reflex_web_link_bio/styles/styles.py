@@ -1,7 +1,7 @@
 import reflex as rx
 from enum import Enum  # librería de python
 
-# 🔟🅰 Importamos y edutadmos el backgraundo que tenemos desde el fichero colors para der 
+# 🔟🅰 Importamos y edutadmos el backgraundo que tenemos desde el fichero colors pr 
 from .colors import Color as Color
 
 # 🔟🆎 Importantando bloque de edición de botones para cambiar los botones como la edicón TextColor()
@@ -21,6 +21,7 @@ class Size(Enum):
     SMALL = "0.5em"  # Equivale a 8px
     MEDIUN = "0.8em"
     DEFAULT = "1em"  # --> 16px
+    LARGE = "1.5em"  # 🔟🆎
     BIG = "2em"  # --> 32px
 
 
@@ -28,8 +29,7 @@ class Size(Enum):
 
 # Estilo general de botones como dicionario
 BASE_STYLE = {
-    "background_color": Color.BACKGROUND.value,
-    # 🔟🅰 con la edición del backgraund io 
+    "background_color": Color.BACKGROUND.value,  # 🔟🅰 con la edición del backgro 
     # Mapa de propiedades para el botón
     rx.Button: {
         "width": "100%",  # Que me ocupe el 100% de ese contenedor
@@ -47,6 +47,12 @@ BASE_STYLE = {
     rx.Link: {"text_decoration": "done", "_hover": {}},
 }
 
+# 🔟🆎 hacemos un un edición centrada para el título del nabvar
+navbar_title_style = dict(
+    font_family="Comfortaa-Medium",  # Directamente desde google font
+    font_size=Size.LARGE.value,
+)
+
 # 7️⃣🅰Estilos del título del bloque de botones 7️⃣🅱
 title_style = dict(
     width="100%",
@@ -57,7 +63,7 @@ title_style = dict(
 # Estilo del título del botón
 button_tittle_style = dict(
     font_size=Size.DEFAULT.value,
-    color=TextColor.HEADER.value,  # 🔟🅱 Modificando el color del texto en el n 
+    color=TextColor.HEADER.value,  # 🔟🅱 Modificando el color del texto n 
 )
 
 # Estilo texto cuerpo
