@@ -33,6 +33,7 @@ def index() -> rx.Component:
                 max_width=styles.MAX_WIDTH,  # se reemplaza el stylo que se tiene y se viene con el estilo desde el fichero style
                 width="100%",  # Que me muestre el 100% paraque me muestre
                 margin_y=styles.Size.BIG.value,  # Un componente que dejamos como margen hacía afuera y el padding es lo que damos hacía dentro
+                padding=Size.BIG.value,  # 🔟🆎 para earreglar margen hacía dentro
             ),
         ),
         footer(),

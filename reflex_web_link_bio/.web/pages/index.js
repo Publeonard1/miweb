@@ -78,7 +78,7 @@ export default function Component() {
 </Text>
 </HStack>
   <Center>
-  <VStack sx={{"colorText": "Black", "maxWidth": "560px", "width": "100%", "marginY": "2em"}}>
+  <VStack sx={{"colorText": "Black", "maxWidth": "560px", "width": "100%", "marginY": "2em", "padding": "2em"}}>
   <VStack spacing={`2em`} sx={{"fontFamily": "system-ui", "textAlign": "justify", "alingItems": "start"}}>
   <HStack>
   <Avatar name={`Publio Leonardo Moreno Cubides `} size={`lg`} sx={{"fontFamily": "system-ui"}}/>
@@ -136,8 +136,8 @@ export default function Component() {
   <Link as={NextLink} href={`https://twitch.tv/publeonardo1`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
   <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#F1F2F4", "backgroundColor": "#171F26", "_hover": {"backgroundColor": "#3300CC"}}}>
   <HStack>
-  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
-  <VStack alignItems={`start`}>
+  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em", "margin": "0.8em"}}/>
+  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": "0px !important"}}>
   <Text sx={{"fontSize": "1em", "color": "#F1F2F4"}}>
   {`Twitch`}
 </Text>
@@ -151,8 +151,8 @@ export default function Component() {
   <Link as={NextLink} href={`https://github.com/Publeonard1`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
   <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#F1F2F4", "backgroundColor": "#171F26", "_hover": {"backgroundColor": "#3300CC"}}}>
   <HStack>
-  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
-  <VStack alignItems={`start`}>
+  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em", "margin": "0.8em"}}/>
+  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": "0px !important"}}>
   <Text sx={{"fontSize": "1em", "color": "#F1F2F4"}}>
   {`Github`}
 </Text>
@@ -166,8 +166,8 @@ export default function Component() {
   <Link as={NextLink} href={`https://youtube.com/leonardo1mc`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
   <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#F1F2F4", "backgroundColor": "#171F26", "_hover": {"backgroundColor": "#3300CC"}}}>
   <HStack>
-  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
-  <VStack alignItems={`start`}>
+  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em", "margin": "0.8em"}}/>
+  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": "0px !important"}}>
   <Text sx={{"fontSize": "1em", "color": "#F1F2F4"}}>
   {`YouTube - Canal oficial de Leonardo`}
 </Text>
@@ -181,8 +181,8 @@ export default function Component() {
   <Link as={NextLink} href={`https://https://discord.com/channels/729672926432985098/1004479046207410366`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
   <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#F1F2F4", "backgroundColor": "#171F26", "_hover": {"backgroundColor": "#3300CC"}}}>
   <HStack>
-  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
-  <VStack alignItems={`start`}>
+  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em", "margin": "0.8em"}}/>
+  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": "0px !important"}}>
   <Text sx={{"fontSize": "1em", "color": "#F1F2F4"}}>
   {`Discord`}
 </Text>
@@ -199,8 +199,8 @@ export default function Component() {
   <Link as={NextLink} href={`https://twitch.tv/publeonardo1`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
   <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#F1F2F4", "backgroundColor": "#171F26", "_hover": {"backgroundColor": "#3300CC"}}}>
   <HStack>
-  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
-  <VStack alignItems={`start`}>
+  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em", "margin": "0.8em"}}/>
+  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": "0px !important"}}>
   <Text sx={{"fontSize": "1em", "color": "#F1F2F4"}}>
   {`Instagram`}
 </Text>
@@ -214,8 +214,8 @@ export default function Component() {
   <Link as={NextLink} href={`https://github.com/Publeonard1`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
   <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#F1F2F4", "backgroundColor": "#171F26", "_hover": {"backgroundColor": "#3300CC"}}}>
   <HStack>
-  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
-  <VStack alignItems={`start`}>
+  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em", "margin": "0.8em"}}/>
+  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": "0px !important"}}>
   <Text sx={{"fontSize": "1em", "color": "#F1F2F4"}}>
   {`Github`}
 </Text>
@@ -229,8 +229,8 @@ export default function Component() {
   <Link as={NextLink} href={`https://youtube.com/leonardo1mc`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
   <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#F1F2F4", "backgroundColor": "#171F26", "_hover": {"backgroundColor": "#3300CC"}}}>
   <HStack>
-  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
-  <VStack alignItems={`start`}>
+  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em", "margin": "0.8em"}}/>
+  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": "0px !important"}}>
   <Text sx={{"fontSize": "1em", "color": "#F1F2F4"}}>
   {`YouTube - Canal oficial de Leonardo`}
 </Text>
@@ -244,8 +244,26 @@ export default function Component() {
   <Link as={NextLink} href={`https://https://discord.com/channels/729672926432985098/1004479046207410366`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
   <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#F1F2F4", "backgroundColor": "#171F26", "_hover": {"backgroundColor": "#3300CC"}}}>
   <HStack>
-  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em"}}/>
-  <VStack alignItems={`start`}>
+  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em", "margin": "0.8em"}}/>
+  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": "0px !important"}}>
+  <Text sx={{"fontSize": "1em", "color": "#F1F2F4"}}>
+  {`Discord`}
+</Text>
+  <Text sx={{"fontSize": "0.8em", "color": "#C3C7CB"}}>
+  {`Encuentros en Dsicord`}
+</Text>
+</VStack>
+</HStack>
+</Button>
+</Link>
+  <Heading size={`md`} sx={{"width": "100%", "paddingTop": "1em", "color": "#F1F2F4"}}>
+  {`Contacto.`}
+</Heading>
+  <Link as={NextLink} href={`https://https://discord.com/channels/729672926432985098/1004479046207410366`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
+  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#F1F2F4", "backgroundColor": "#171F26", "_hover": {"backgroundColor": "#3300CC"}}}>
+  <HStack>
+  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em", "margin": "0.8em"}}/>
+  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": "0px !important"}}>
   <Text sx={{"fontSize": "1em", "color": "#F1F2F4"}}>
   {`Discord`}
 </Text>
