@@ -60,6 +60,17 @@ def links() -> rx.Component:
             "Encuentros en Dsicord",
             "https://https://discord.com/channels/729672926432985098/1004479046207410366",
         ),
+        title("Contacto."),
+        # link_button(
+        #   "Gmail",
+        #    const.EMAIL,
+        #    f"leonardo: {cons.EMAIL}",
+        # ),
+        link_button(
+            "Discord",
+            "Encuentros en Dsicord",
+            "https://https://discord.com/channels/729672926432985098/1004479046207410366",
+        ),
         width="100%",  # Me ocupa todo el espacio que tengo con el cuadro de descripción
         spacing=Size.MEDIUN.value,
     )
