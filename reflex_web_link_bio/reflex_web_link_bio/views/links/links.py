@@ -9,6 +9,9 @@ from reflex_web_link_bio.components.title import title
 # Boque de tamaños generico
 from reflex_web_link_bio.styles.styles import Size as Size
 
+# 11🅰 Importar constants en este fichero
+import reflex_web_link_bio.views.constants as const
+
 
 # 3️⃣Se crea el componente de links quee pueden ser textos o imagenes donde me van a conducir a otras vistas o páginas
 def links() -> rx.Component:
@@ -61,15 +64,15 @@ def links() -> rx.Component:
             "https://https://discord.com/channels/729672926432985098/1004479046207410366",
         ),
         title("Contacto."),
-        # link_button(
-        #   "Gmail",
-        #    const.EMAIL,
-        #    f"leonardo: {cons.EMAIL}",
-        # ),
         link_button(
-            "Discord",
-            "Encuentros en Dsicord",
-            "https://https://discord.com/channels/729672926432985098/1004479046207410366",
+            "Gmail",
+            const.EMAIL,  # 11🅰
+            f"mailto:{const.EMAIL}",
+        ),
+        link_button(
+            "Linkedin",
+            "Perfil profesional",
+            const.LINKPERFIL,
         ),
         width="100%",  # Me ocupa todo el espacio que tengo con el cuadro de descripción
         spacing=Size.MEDIUN.value,

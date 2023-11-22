@@ -259,16 +259,31 @@ export default function Component() {
   <Heading size={`md`} sx={{"width": "100%", "paddingTop": "1em", "color": "#F1F2F4"}}>
   {`Contacto.`}
 </Heading>
-  <Link as={NextLink} href={`https://https://discord.com/channels/729672926432985098/1004479046207410366`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
+  <Link as={NextLink} href={`mailto:ingpubleonard1@gmail.com`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
   <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#F1F2F4", "backgroundColor": "#171F26", "_hover": {"backgroundColor": "#3300CC"}}}>
   <HStack>
   <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em", "margin": "0.8em"}}/>
   <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": "0px !important"}}>
   <Text sx={{"fontSize": "1em", "color": "#F1F2F4"}}>
-  {`Discord`}
+  {`Gmail`}
 </Text>
   <Text sx={{"fontSize": "0.8em", "color": "#C3C7CB"}}>
-  {`Encuentros en Dsicord`}
+  {`ingpubleonard1@gmail.com`}
+</Text>
+</VStack>
+</HStack>
+</Button>
+</Link>
+  <Link as={NextLink} href={`https://www.linkedin.com/in/leonardo-m-5ba68011a`} isExternal={true} sx={{"width": "100%", "textDecoration": "done", "_hover": {}}}>
+  <Button sx={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "0.5em", "color": "#F1F2F4", "backgroundColor": "#171F26", "_hover": {"backgroundColor": "#3300CC"}}}>
+  <HStack>
+  <ArrowForwardIcon sx={{"width": "2em", "heigh": "2em", "margin": "0.8em"}}/>
+  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": "0px !important"}}>
+  <Text sx={{"fontSize": "1em", "color": "#F1F2F4"}}>
+  {`Linkedin`}
+</Text>
+  <Text sx={{"fontSize": "0.8em", "color": "#C3C7CB"}}>
+  {`Perfil profesional`}
 </Text>
 </VStack>
 </HStack>
