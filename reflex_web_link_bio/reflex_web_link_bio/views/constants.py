@@ -19,3 +19,7 @@ BOOKS_URL = "https://amazon.es/shop/mouredev/list/2ZIHJJFJ9AVZ3"
 SETUP_URL = "https://mouredev.com/setup"
 MOUREDEV_URL = "https://mouredev.com"
 COFFEE_URL = "https://buymeacoffee.com/mouredev"
+
+# CONTACTO
+EMAIL = "ingpubleonard1@gmail.com"
+LINKPERFIL = "https://www.linkedin.com/in/leonardo-m-5ba68011a"
